@@ -1,0 +1,10 @@
+public class Example {
+    public static void main(String[] args) {
+        try {
+            int result = 5 / 0; // Aritmatika yang menyebabkan ArithmeticException
+        } catch (ArithmeticException e) {
+            System.out.println("Terjadi pembagian oleh nol!");
+            e.printStackTrace();
+        }
+    }
+}
