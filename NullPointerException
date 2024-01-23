@@ -1,0 +1,11 @@
+public class Example {
+    public static void main(String[] args) {
+        try {
+            String str = null;
+            int length = str.length(); // NullPointerExeption karena str bernilai null
+        } catch (NullPointerException e) {
+            System.out.println("Terjadi akses pada objek null!");
+            e.printStackTrace();
+        }
+    }
+}
