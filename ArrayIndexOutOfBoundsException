@@ -1,0 +1,11 @@
+public class Example {
+    public static void main(String[] args) {
+        try {
+            int[] array = {1, 2, 3};
+            int value = array[5]; // ArrayIndexOutOfBoundsException karena indeks 5 tidak ada
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Terjadi akses di luar batas indeks array!");
+            e.printStackTrace();
+        }
+    }
+}
